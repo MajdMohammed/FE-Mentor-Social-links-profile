@@ -73,23 +73,24 @@ picture {
 body {
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #141414;
     font-family: 'inter-var';
     color: #FFFFFF;
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 .main-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: fit-content;
     max-width: 25rem;
     border-radius: 10px;
     background-color: #1F1F1F;
-    padding: 25px;
-    padding-bottom: 20px;
-    margin: 0px auto;
+    padding: 1.563rem;
+    padding-bottom: 1.25rem;
 }
 
 /* profile image */
@@ -97,8 +98,8 @@ body {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin-bottom: 1.25rem;
+    margin-top: 0.625;
 }
 
 
@@ -108,9 +109,9 @@ img {
 
 /* Paragraph style */
 p,
-a {
+a,
+blockquote {
     font-weight: bold;
-    margin: auto;
     text-align: center;
     letter-spacing: 0.5px;
 }
@@ -118,33 +119,33 @@ a {
 p:nth-of-type(1) {
     font-size: clamp(0.875rem, 0.875rem + 0.7vw, 2rem);
     font-weight: 700;
-    margin-bottom: 3px;
+    margin-bottom: 0.120rem;
 }
 
-p:nth-of-type(2) {
+blockquote:nth-of-type(1) {
     font-size: clamp(0.875rem, 0.3rem + 0.3vw, 1rem);
     font-weight: 400;
     color: #C4F82A;
 }
 
-p:nth-of-type(3) {
+blockquote:nth-of-type(2) {
     font-size: clamp(0.875rem, 0.3rem + 0.3vw, 1rem);
     font-weight: 600;
     color: #9B9B9B;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
 }
 
 /* list of links */
 li {
     display: flex;
     justify-content: center;
-    line-height: 40px;
-    width: 290px;
+    line-height: 2.5rem;
+    width: 18.125rem;
     max-width: 20rem;
     background-color: #333333;
-    margin-top: 13px;
-    margin-bottom: 13px;
+    margin-top: 0.813rem;
+    margin-bottom: 0.813rem;
     border-radius: 6px;
     text-transform: capitalize;
 }
@@ -162,8 +163,8 @@ li {
 }
 
 a {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    min-height: 100%;
     text-align: center;
     font-size: clamp(0.875rem, 0.4rem + 0.4vw, 1.25rem);
 }
