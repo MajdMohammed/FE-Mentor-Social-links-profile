@@ -140,6 +140,7 @@ blockquote:nth-of-type(2) {
 li {
     display: flex;
     justify-content: center;
+    align-items: center;
     line-height: 2.5rem;
     width: 18.125rem;
     max-width: 20rem;
@@ -163,8 +164,8 @@ li {
 }
 
 a {
-    max-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
     text-align: center;
     font-size: clamp(0.875rem, 0.4rem + 0.4vw, 1.25rem);
 }
